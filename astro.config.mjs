@@ -7,9 +7,9 @@ import { fotosPublicas, ogImage } from './src/data/imagenes.ts';
 
 // https://astro.build/config
 export default defineConfig({
-  // URL real de esta landing. Canónica, sitemap, robots.txt, og:image y JSON-LD salen de aquí.
-  // PENDIENTE: cambiarlo cuando la landing tenga su dominio final.
-  site: 'https://arko-sushi.midudev.workers.dev',
+  // GitHub Pages publica este proyecto bajo un subdirectorio con el nombre del repositorio.
+  site: 'https://charliecardenastoledo.github.io/arko-landing/',
+  base: '/arko-landing',
   integrations: [
     sitemap({
       // La portada lleva sus imágenes en el sitemap: la de redes y las fotos del local.
@@ -17,7 +17,7 @@ export default defineConfig({
         if (new URL(item.url).pathname !== '/') return item;
         const images = [
           { src: ogImage.src, title: ogImage.title, caption: ogImage.alt },
-          ...fotosPublicas.map((foto) => ({ src: foto.src, title: `${foto.lugar} · Arko`, caption: foto.alt })),
+          ...fotosPublicas.map((foto) => ({ src: foto.src, title: `${foto.lugar} · Ecuador`, caption: foto.alt })),
         ];
         return { ...item, img: images.map(({ src, ...rest }) => ({ url: new URL(src, item.url).href, ...rest })) };
       },

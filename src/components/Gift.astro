@@ -1,7 +1,6 @@
 ---
 import { Picture } from 'astro:assets';
-import Icon from './Icon.astro';
-import { links, photos } from '../data/arko';
+import { photos } from '../data/arko';
 ---
 
 <section id="regala" aria-labelledby="regala-title" class="px-4 py-24 md:px-12 xl:px-24">
@@ -20,16 +19,14 @@ import { links, photos } from '../data/arko';
       />
     </div>
     <div>
-      <p data-reveal class="text-sm text-teja">Regala Arko</p>
-      <h2 id="regala-title" data-reveal style="--d:100ms" class="mt-4 text-3xl lg:text-5xl">El mejor regalo es una mesa</h2>
+      <p data-reveal class="text-sm text-teja">Una idea de experiencia</p>
+      <h2 id="regala-title" data-reveal style="--d:100ms" class="mt-4 text-3xl lg:text-5xl">Compartir también es parte del viaje</h2>
       <p data-reveal style="--d:200ms" class="mt-6 max-w-md text-base text-crema/70 lg:text-lg">
-        Un voucher digital para vivir la Short o la Full Experience. Válido 12 meses, sin fecha fija, y llega por email al
-        momento.
+        Este bloque ilustra cómo podría presentarse una experiencia para compartir. No se emiten vouchers ni se reciben pagos.
       </p>
       <div data-reveal style="--d:300ms" class="mt-8">
-        <a href={links.regalar} class="btn btn-ghost" rel="noopener">
-          <Icon name="gift" class="size-5" />
-          <span>Regalar una experiencia</span>
+        <a href="#contacto" class="btn btn-ghost">
+          <span>Conocer al desarrollador</span>
         </a>
       </div>
     </div>

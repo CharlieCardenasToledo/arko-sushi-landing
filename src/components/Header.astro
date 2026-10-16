@@ -1,7 +1,6 @@
 ---
 import Logo from './Logo.astro';
-import Icon from './Icon.astro';
-import { contacto, links, nav } from '../data/arko';
+import { nav } from '../data/arko';
 ---
 
 <a
@@ -17,7 +16,7 @@ import { contacto, links, nav } from '../data/arko';
   <div
     class="pointer-events-auto flex w-max items-center gap-6 rounded-full bg-bg/60 p-2 pl-6 ring-1 ring-crema/10 backdrop-blur-xl lg:gap-5"
   >
-    <a href="#inicio" class="flex h-9 items-center rounded-full text-crema" aria-label="Arko, volver al inicio">
+    <a href="#inicio" class="flex h-9 items-center rounded-full text-crema" aria-label="Ecuador, volver al inicio">
       <Logo class="h-4 w-auto" />
     </a>
 
@@ -41,8 +40,8 @@ import { contacto, links, nav } from '../data/arko';
     </nav>
 
     <div class="flex items-center gap-1">
-      <a href={links.reservar} class="btn btn-primary btn-sm px-4">
-        <span>Reservar</span>
+      <a href="#contacto" class="btn btn-primary btn-sm px-4">
+        <span>Créditos</span>
       </a>
       <button
         type="button"
@@ -75,18 +74,12 @@ import { contacto, links, nav } from '../data/arko';
         ))
       }
       <li class="menu-item pt-6" style={`--i:${nav.length}`}>
-        <a href={links.reservar} class="btn btn-primary"><span>Reservar mesa</span></a>
+        <a href="#contacto" class="btn btn-primary"><span>Créditos</span></a>
       </li>
     </ul>
   </nav>
 
-  <div class="menu-item flex flex-col items-center gap-2 text-sm text-crema/70" style={`--i:${nav.length + 1}`}>
-    <a href={links.telefono} class="link inline-flex items-center gap-2">
-      <Icon name="phone" />
-      {contacto.telefono}
-    </a>
-    <p>{contacto.calle} · {contacto.horario}</p>
-  </div>
+  <p class="menu-item text-center text-sm text-crema/70" style={`--i:${nav.length + 1}`}>Prototipo gastronómico de muestra · Ecuador</p>
 </div>
 
 <style>

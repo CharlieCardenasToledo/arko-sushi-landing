@@ -1,16 +1,16 @@
 ---
 import { Picture } from 'astro:assets';
 import Pending from './Pending.astro';
-import { experiencias, links, maridaje, photos } from '../data/arko';
+import { experiencias, maridaje, photos } from '../data/arko';
 ---
 
 <section id="experiencias" data-spy="#experiencias" aria-labelledby="exp-title" class="px-4 py-24 md:px-12 xl:px-24">
   <div class="mx-auto max-w-6xl">
     <div class="max-w-xl">
-      <p data-reveal class="text-sm text-teja">Experiencias para dos</p>
-      <h2 id="exp-title" data-reveal style="--d:100ms" class="mt-4 text-3xl lg:text-5xl">Dos menús, precio cerrado</h2>
+      <p data-reveal class="text-sm text-teja">Conceptos de muestra</p>
+      <h2 id="exp-title" data-reveal style="--d:100ms" class="mt-4 text-3xl lg:text-5xl">Experiencias por diseñar</h2>
       <p data-reveal style="--d:200ms" class="mt-6 text-base text-crema/70 lg:text-lg">
-        Elige cuánto quieres recorrer de la carta. También puedes pedir a la carta.
+        Ejemplos visuales para una posible propuesta culinaria ecuatoriana. No son productos a la venta.
       </p>
     </div>
 
@@ -38,7 +38,7 @@ import { experiencias, links, maridaje, photos } from '../data/arko';
             </p>
             <p class="mt-1 text-sm text-crema/50">{exp.porPersona}</p>
             <div class="mt-8 flex flex-1 items-end">
-              <a href={links.reservar} class="btn btn-primary"><span>Reservar mesa</span></a>
+              <a href="#contacto" class="btn btn-primary"><span>Ver créditos</span></a>
             </div>
           </article>
         ))
@@ -66,6 +66,6 @@ import { experiencias, links, maridaje, photos } from '../data/arko';
       </article>
     </div>
 
-    <Pending class="mt-8 max-w-xl">¿Las experiencias se piden al reservar o en la mesa? Según la respuesta, el botón de cada tarjeta puede llevar ya el menú elegido.</Pending>
+    <Pending class="mt-8 max-w-xl">Los nombres, valores y descripciones son ejemplos de diseño en USD; deben definirse y verificarse para cualquier uso comercial.</Pending>
   </div>
 </section>

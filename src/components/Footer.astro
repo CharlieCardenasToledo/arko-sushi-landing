@@ -1,75 +1,24 @@
 ---
 import Logo from './Logo.astro';
-import Icon from './Icon.astro';
-import { contacto, legal, links, nav } from '../data/arko';
+import { nav } from '../data/arko';
 
 const year = new Date().getFullYear();
 ---
 
-<footer class="px-4 pt-24 pb-12 md:px-12 xl:px-24">
-  <div class="grid gap-12 md:grid-cols-2 xl:grid-cols-4">
+<footer id="contacto" class="px-4 pt-24 pb-12 md:px-12 xl:px-24">
+  <div class="mx-auto grid max-w-6xl gap-12 md:grid-cols-2">
     <div class="flex flex-col gap-4">
       <Logo class="h-6 w-auto self-start text-crema" />
-      <p class="max-w-xs text-sm text-crema/70">Cocina japonesa con alma mediterránea en el Eixample de Barcelona.</p>
-      <nav aria-label="Secciones">
-        <ul class="flex flex-wrap gap-x-4 gap-y-2 text-sm">
-          {
-            nav.map((item) => (
-              <li>
-                <a href={`/${item.href}`} class="link">
-                  {item.label}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </nav>
+      <p class="max-w-lg text-sm text-crema/70">Prototipo visual de una experiencia gastronómica inspirada en Ecuador. No representa un restaurante activo ni ofrece reservas, pedidos o pagos.</p>
+      <nav aria-label="Secciones"><ul class="flex flex-wrap gap-x-4 gap-y-2 text-sm">{nav.map((item) => <li><a href={item.href} class="link">{item.label}</a></li>)}</ul></nav>
     </div>
-
-    <div class="flex flex-col gap-2 text-sm">
-      <h2 class="font-sans text-xs tracking-widest text-crema/50 uppercase">Visítanos</h2>
-      <address>{contacto.calle}<br />{contacto.ciudad}</address>
-      <a href={links.maps} class="link inline-flex items-center gap-2 self-start" rel="noopener" target="_blank">
-        <Icon name="mapPin" />
-        Cómo llegar
-      </a>
-    </div>
-
-    <div class="flex flex-col gap-2 text-sm">
-      <h2 class="font-sans text-xs tracking-widest text-crema/50 uppercase">Horario</h2>
-      <p>{contacto.horario}</p>
-      <p class="text-crema/70">{contacto.cocina}</p>
-    </div>
-
-    <div class="flex flex-col gap-2 text-sm">
-      <h2 class="font-sans text-xs tracking-widest text-crema/50 uppercase">Contacto</h2>
-      <a href={links.telefono} class="link inline-flex items-center gap-2 self-start">
-        <Icon name="phone" />
-        {contacto.telefono}
-      </a>
-      <a href={links.email} class="link inline-flex items-center gap-2 self-start">
-        <Icon name="envelope" />
-        {contacto.email}
-      </a>
-      <a href={links.instagram} class="link inline-flex items-center gap-2 self-start" rel="noopener" target="_blank">
-        <Icon name="instagram" />
-        {contacto.instagram}
-      </a>
+    <div class="flex flex-col gap-3 text-sm">
+      <h2 class="font-sans text-xs tracking-widest text-crema/50 uppercase">Desarrollo</h2>
+      <p>Diseño y desarrollo: Charlie Cárdenas Toledo</p>
+      <a href="https://charliecardenastoledo.com/" class="link self-start" rel="noopener noreferrer" target="_blank">charliecardenastoledo.com</a>
+      <a href="https://ec.linkedin.com/in/charlie-cardenas-toledo" class="link self-start" rel="noopener noreferrer" target="_blank">LinkedIn · Charlie Cárdenas Toledo</a>
     </div>
   </div>
-
-  <div class="mt-16 flex flex-col gap-4 pt-8 text-xs text-crema/50 md:flex-row md:items-center md:justify-between">
-    <p>© {year} Arko Restaurant</p>
-    <ul class="flex flex-wrap gap-x-6 gap-y-2">
-      {
-        legal.map((item) => (
-          <li>
-            <a href={item.href} class="link" rel="noopener">
-              {item.label}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </div>
+  <p class="mx-auto mt-12 max-w-6xl border-t border-crema/10 pt-6 text-xs leading-relaxed text-crema/50">Prototipo de muestra situado en Ecuador. Las fotografías y videos usados como referencia pertenecen al proyecto original Arko Restaurant, Barcelona; se conservan aquí con atribución y no representan un local ecuatoriano.</p>
+  <p class="mx-auto mt-4 max-w-6xl text-xs text-crema/50">© {year} Charlie Cárdenas Toledo</p>
 </footer>

@@ -1,16 +1,14 @@
 {
-  "name": "Arko Restaurant",
-  "short_name": "Arko",
-  "description": "Sushi y cocina nikkei en el Eixample, Barcelona.",
-  "lang": "es",
-  "start_url": "/",
-  "scope": "/",
+  "name": "Prototipo gastronómico de Ecuador",
+  "short_name": "Ecuador demo",
+  "description": "Prototipo visual de una propuesta gastronómica inspirada en Ecuador.",
+  "lang": "es-EC",
+  "start_url": "/arko-landing/",
+  "scope": "/arko-landing/",
   "display": "standalone",
   "background_color": "#131209",
   "theme_color": "#131209",
   "icons": [
-    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
-    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+    { "src": "/arko-landing/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
 }

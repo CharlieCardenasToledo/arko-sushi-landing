@@ -1,30 +1,20 @@
 ---
-import Icon from './Icon.astro';
 import Pending from './Pending.astro';
-import { links, platos } from '../data/arko';
+import { platos } from '../data/arko';
 ---
 
 <section id="carta" data-spy="#carta" aria-labelledby="carta-title" class="px-4 py-24 md:px-12 xl:px-24">
   <div class="mx-auto max-w-6xl">
     <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
       <div class="max-w-xl">
-        <p data-reveal class="text-sm text-teja">Platos destacados</p>
-        <h2 id="carta-title" data-reveal style="--d:100ms" class="mt-4 text-3xl lg:text-5xl">Lo que llega a la mesa</h2>
+        <p data-reveal class="text-sm text-teja">Ideas de muestra</p>
+        <h2 id="carta-title" data-reveal style="--d:100ms" class="mt-4 text-3xl lg:text-5xl">Sabores para explorar</h2>
       </div>
-      <a
-        data-reveal
-        style="--d:200ms"
-        href={links.carta}
-        class="link inline-flex items-center gap-2 self-start text-sm md:self-auto"
-        rel="noopener"
-      >
-        Ver la carta completa
-        <Icon name="arrowUpRight" />
-      </a>
+      <p data-reveal style="--d:200ms" class="max-w-sm text-sm text-crema/60 md:text-right">Nombres e ingredientes ilustrativos; no corresponden a una carta disponible.</p>
     </div>
 
     <Pending class="mt-8">
-      Fotos de platos: photo-01 a photo-27 no están en public/photos. Cada plato tiene su hueco ovalado listo.
+      Propuesta conceptual: los platos se muestran como inspiración y requieren validación antes de usarse en un negocio real.
     </Pending>
 
     <ol class="mt-12 divide-y divide-crema/10">
