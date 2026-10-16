@@ -8,8 +8,8 @@ import { fotosPublicas, ogImage } from './src/data/imagenes.ts';
 // https://astro.build/config
 export default defineConfig({
   // GitHub Pages publica este proyecto bajo un subdirectorio con el nombre del repositorio.
-  site: 'https://charliecardenastoledo.github.io/arko-landing/',
-  base: '/arko-landing',
+  site: 'https://charliecardenastoledo.github.io/arko-sushi-landing/',
+  base: '/arko-sushi-landing',
   integrations: [
     sitemap({
       // La portada lleva sus imágenes en el sitemap: la de redes y las fotos del local.

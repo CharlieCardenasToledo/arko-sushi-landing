@@ -3,12 +3,12 @@
   "short_name": "Ecuador demo",
   "description": "Prototipo visual de una propuesta gastronómica inspirada en Ecuador.",
   "lang": "es-EC",
-  "start_url": "/arko-landing/",
-  "scope": "/arko-landing/",
+  "start_url": "/arko-sushi-landing/",
+  "scope": "/arko-sushi-landing/",
   "display": "standalone",
   "background_color": "#131209",
   "theme_color": "#131209",
   "icons": [
-    { "src": "/arko-landing/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+    { "src": "/arko-sushi-landing/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]
 }

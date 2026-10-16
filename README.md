@@ -2,7 +2,7 @@
 
 Sitio de demostración de diseño y desarrollo de **Charlie Cárdenas Toledo**, situado conceptualmente en Ecuador. No representa un restaurante activo. Los nombres de platos, valores, horarios, ubicación y cualquier otro dato comercial que aparezca son ejemplos visuales; no se aceptan reservas, pedidos ni pagos.
 
-**Demo publicada:** [charliecardenastoledo.github.io/arko-landing](https://charliecardenastoledo.github.io/arko-landing/)
+**Demo publicada:** [charliecardenastoledo.github.io/arko-sushi-landing](https://charliecardenastoledo.github.io/arko-sushi-landing/)
 
 ## Desarrollo
 
@@ -13,7 +13,7 @@ Sitio de demostración de diseño y desarrollo de **Charlie Cárdenas Toledo**, 
 - `pnpm preview`: sirve localmente el build.
 - GitHub Actions publica `dist/` en GitHub Pages al actualizar `main`.
 
-El sitio está configurado para publicarse bajo `/arko-landing/`; por eso las rutas de recursos y páginas internas deben respetar la base configurada en `astro.config.mjs`.
+El sitio está configurado para publicarse bajo `/arko-sushi-landing/`; por eso las rutas de recursos y páginas internas deben respetar la base configurada en `astro.config.mjs`.
 
 ## Créditos y atribución
 
